@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver notas</title>
+    <link rel="stylesheet" href="/static/style/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/enviar">Lançar notas</a> |
+        <a href="/ver">Ver notas</a>
+    </nav>
+    <div class="ver_notas">
+        <h2>Ver notas</h2>
+        <table class="notas_tabela">
+            <thead>
+                <tr>
+                    <th>Nome do aluno</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Média</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for notas in notas %}
+                <tr>
+                    <td>{{ notas.nome }}</td>
+                    <td>{{ notas.nota1 }}</td>
+                    <td>{{ notas.nota2 }}</td>
+                    <td>{{ notas.nota3 }}</td>
+                    <td>{{ notas.media }}</td>
+                    <td>{{ notas.resultado }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>

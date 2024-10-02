@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do aluno</title>
+    <link rel="stylesheet" href="/static/style/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/enviar">Lançar notas</a> |
+        <a href="/ver">Ver notas</a>
+    </nav>
+
+    <div class="cad_notas"> 
+        <form action="/lancar_notas" method = "post" class = "cad_notas_formulario">
+            <h2>Média do Aluno</h2>
+            <label for="">Nome do aluno:</label>
+            <input type="text" name="nome_aluno" id="nome_aluno"> <br>
+
+            <label for="">Nota 1:</label>
+            <input type="number" name="primeira_nota" id="primeira_nota"> <br>
+
+            <label for="">Nota 2:</label>
+            <input type="number" name="segunda_nota" id="segunda_nota"> <br>
+
+            <label for="">Nota 3:</label>
+            <input type="number" name="terceira_nota" id="terceira_nota"> <br>
+            
+
+            <div>
+                <button type = "submit" class = "enviar_notas">Lançar</button>
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
