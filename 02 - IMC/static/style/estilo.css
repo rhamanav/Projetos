@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+:root{
+    --fonte-primaria:"Cinzel";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.tabela h1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+/* Estilos gerais */
+body {
+    font-family: "Cinzel";  
+    background-color: #f4f4f4;  
+}
+
+.tabela{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+.tabela h2{
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imc_tabela{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #FFF;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 10px 10px lightblue;
+    border-radius: 20px 0 0 0;
+}
+
+.imc_tabela label{
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.tabela input[type="text"]{
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 0.5px black solid;
+    width: 600px;
+    color: rgb(0, 0, 0);
+    
+}
+.tabela input[type="number"]{
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 0.5px black solid;
+    width: 600px;
+    color: rgb(0, 0, 0);
+}
+.tabela input[type="number"]:hover{
+    background-color: rgb(242, 242, 231);
+}
+.tabela input[type="text"]:hover{
+    background-color: rgb(241, 241, 235);
+}
+
+.tabela input[type="text"]:focus{
+    background-color: rgb(241, 241, 235);
+}
+
+.button_calcular {
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+    background-color: #58e9d1;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 0.5px black solid;
+    cursor: pointer;
+    margin-left: 500px;
+}
+
+.button_calcular:hover {
+    opacity: 0.9;
+    color: rgb(255, 255, 255);
+}
+
